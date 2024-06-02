@@ -11,5 +11,18 @@
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
     <hr/>
+
+    <div id="display-sum"></div>
+    <input type="number" onkeyup="saveFirstNumber(this.value)" value="" placeholder="numbers only">
+    <input type="number" onkeyup="saveSecondNumber(this.value)" value="" placeholder="numbers only">
+    <button onclick="add()">Find the sum</button>
+
+    <div id="numberOfChecks">No checkboxes are checked</div>
+    <input type="checkbox" name="check-1" id="check-1" onclick="saveFirstCheckbox(this.value)" value="">
+    <input type="checkbox" name="check-2" id="check-2" onclick="saveSecondCheckbox(this.value)" value="">
+    <button onclick="howMany()">How many checkboxes are checked?</button>
+    <p id="numChecks"></p>
+
+    <button onclick="printType()">yo</button>
   </body>
 </html>

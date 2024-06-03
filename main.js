@@ -70,18 +70,19 @@ let num1;
 let num2;
 
 const saveFirstNumber = (val) => {
-  num1 = parseInt(val)
+  // console.log(typeof val)
+  num1 = convertToNum(val)
 }
 
 const saveSecondNumber = (val) => {
-  num2 = parseInt(val)
+  num2 = convertToNum(val)
 
 }
 
 const add = () => {
   let sum = num1 + num2
-  console.log(sum)
 
+  sum = convertToString(sum)
   document.getElementById("display-sum").innerHTML = sum;
 }
   

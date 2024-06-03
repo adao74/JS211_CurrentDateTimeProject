@@ -83,6 +83,7 @@ const add = () => {
   let sum = num1 + num2
 
   sum = convertToString(sum)
+  console.log(`This is the type for the sum: ${typeof sum}`)
   document.getElementById("display-sum").innerHTML = sum;
 }
   
